@@ -1,0 +1,36 @@
+project: 
+  type: book
+  output-dir: docs
+
+lightbox: auto
+
+book: 
+  title: "社会科指導法"
+  author: "とりけらとっぷす"
+  chapters:
+    - index.qmd
+    - part: "本書のねらいと社会科授業の基本スタンス"
+      chapters: 
+      - 1_mokuhyo.qmd
+    - part: "単元構想と年間計画"
+    - part: "授業の組み立て"
+    - part: "アクティブ・ラーニングと協働学習の実践"
+    - part: "ICT活用と資料探しのコツ"
+    - part: "評価とフィードバック"
+    - part: "付録"
+    - references.qmd
+
+
+format:
+  html:
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
+    theme: 
+      light: united
+      dark: cyborg
+    toc: true
+    toc-depth: 4
+    toc-expand: 2
