@@ -9,9 +9,10 @@ book:
   author: "とりけらとっぷす"
   chapters:
     - index.qmd
-    - part: "本書のねらいと社会科授業の基本スタンス"
+    - part: "社会科の基本"
       chapters: 
       - 1_mokuhyo.qmd
+      - 2_churitsu.qmd
     - part: "単元構想と年間計画"
     - part: "授業の組み立て"
     - part: "アクティブ・ラーニングと協働学習の実践"
@@ -20,17 +21,18 @@ book:
     - part: "付録"
     - references.qmd
 
-
 format:
   html:
-    grid:
-      sidebar-width: 300px
-      body-width: 900px
-      margin-width: 300px
-      gutter-width: 1.5rem
     theme: 
-      light: united
-      dark: cyborg
+      - cosmo
+    grid:
+      sidebar-width: 375px
+    number-sections: true
+    code-line-numbers: true
+    highlight-style: a11y
+    html-math-method: mathjax
     toc: true
-    toc-depth: 4
-    toc-expand: 2
+    toc-depth: 3
+    link-external-newwindow: true
+
+bibliography: tex/references.bib
